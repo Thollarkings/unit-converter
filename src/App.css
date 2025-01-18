@@ -168,11 +168,11 @@ h1 {
     font-size: 1.2rem; /* Adjust font size */
     color: #fff; /* Change text color */
     text-align: center; /* Center the text */
-    padding: 15px; /* Add padding for better readability */
+    padding: 20px; /* Add padding for better readability */
     background-color: none; /* Semi-transparent background */
     border-radius: 5px; /* Rounded corners */
     transition: opacity 0.3s ease; /* Smooth transition for hover effects */
-    width: 80%; /* Set a width for the element */
+    width: 92%; /* Set a width for the element */
 }
 
   h1 {
