@@ -1,0 +1,56 @@
+h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: 1px solid #555564;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    padding: 5px; /* Increased padding for better touch targets */
+    width: 40%; /* Limit maximum width for larger screens */
+    height: 40px; /* Slightly increased height for comfort */
+    border-radius: 10px; /* Corrected border-radius syntax */
+    border: 1px solid #ccc; /* Added border for definition */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    justify-content: center;
+    align-items: center;
+}
+
+.input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #4ae4ff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(74, 228, 255, 0.5); /* Highlight effect on focus */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: Add styles for placeholder text */
+.input::placeholder {
+    color: #aaa; /* Lighter color for placeholder text */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

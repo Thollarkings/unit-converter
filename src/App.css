@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #aaa5a5;
+}
+
+
+.background {
+  background-image: url('./MyIcon.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.main-div {
+  background: linear-gradient(to bottom, rgb(6, 0, 36), rgba(15, 0, 102, 0.5));
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  margin: auto; /* Center horizontally */
+  padding: 20px; /* Add padding */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.43);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.main-div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.menu-container {
+  text-align: center;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  animation: pulsate 1.5s infinite; /* Add pulsating animation */
+}
+
+@keyframes pulsate {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.5);
+      opacity: 0.8;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #78a1ec;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto;
+  background: linear-gradient(to bottom, rgba(6, 0, 36, 0), rgba(15, 0, 102, 0.253));
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #aaa5a527;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.39);
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto;
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #aaa5a527;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.39);
+
+}
+
+.category-item {
+  background: transparent; /* Fully transparent background */
+  color: white; /* Text color */
+  font-size: 1rem;
+  text-align: center; /* Center text */
+  box-shadow: none; /* Remove existing shadow */
+  border: none; /* Remove default button border */
+  padding: 10px 0; /* Add padding for a better clickable area */
+  position: relative; /* For positioning the lines */
+  width: 250px;
+}
+
+
+
+.menu-item {
+  padding: 10px; /* Padding for clickable area */
+  cursor: pointer; /* Change cursor on hover */
+  border-bottom: 1px solid rgba(0, 183, 255, 0.37); /* Bottom border */
+  width: 100%; /* Ensure the item takes full width of the parent */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(36, 53, 85));
+}
+
+.category-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.192);
+}
+
+.category-item:hover, .menu-item:hover {
+  background: linear-gradient(to bottom, rgba(35, 1, 202, 0.685), rgba(15, 0, 102, 0.253));
+}
+
+/* Content Container */
+.content-container {
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+#footer {
+  font-size: 1rem;
+  margin-top: 4%;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+  .main-div {
+      width: 80%; /* Make the main div take more width on mobile */
+      padding: 15px; /* Adjust padding for smaller screens */
+      justify-self: center;
+  }
+
+  .instruction {
+    font-size: 1.2rem; /* Adjust font size */
+    color: #fff; /* Change text color */
+    text-align: center; /* Center the text */
+    padding: 15px; /* Add padding for better readability */
+    background-color: none; /* Semi-transparent background */
+    border-radius: 5px; /* Rounded corners */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effects */
+    width: 80%; /* Set a width for the element */
+}
+
+  h1 {
+      font-size: 1.5rem; /* Adjust heading size */
+      margin: 15px; /* Reduce margin */
+  }
+
+  .hamburger-menu {
+      padding: 8px; /* Adjust padding */
+  }
+
+  .dropdown-menu, .submenu {
+      width: 90%; /* Full width on mobile */
+      font-size: 0.9rem; /* Slightly smaller font size */
+  }
+
+  .category-item, .menu-item {
+      padding: 8px 0; /* Adjust padding for smaller screens */
+      font-size: 0.9rem; /* Smaller font size */
+  }
+
+  #footer {
+      font-size: 0.9rem; /* Adjust footer font size */
+      margin-top: 3%; /* Reduce margin */
+  }
+}
