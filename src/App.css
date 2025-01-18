@@ -159,7 +159,7 @@ h1 {
 /* Mobile Responsive Styles */
 @media (max-width: 600px) {
   .main-div {
-      width: 80%; /* Make the main div take more width on mobile */
+      width: 82%; /* Make the main div take more width on mobile */
       padding: 15px; /* Adjust padding for smaller screens */
       justify-self: center;
   }
@@ -184,10 +184,16 @@ h1 {
       padding: 8px; /* Adjust padding */
   }
 
-  .dropdown-menu, .submenu {
-      width: 90%; /* Full width on mobile */
+  .dropdown-menu {
+     
       font-size: 0.9rem; /* Slightly smaller font size */
+      width: 250px;
   }
+
+  .submenu {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    width: 200px;
+}
 
   .category-item, .menu-item {
       padding: 8px 0; /* Adjust padding for smaller screens */
