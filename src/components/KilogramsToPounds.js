@@ -30,7 +30,7 @@ const KilogramsToPounds = () => {
                     handleConversion(inputValue);
                 }}
             />
-            <p>
+            <p className='result'>
                 {value}{isKilogramsToPounds ? ' kg' : ' lbs'} is equal to {result}.
             </p>
             <button

@@ -37,6 +37,12 @@ p {
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 .input:focus {
