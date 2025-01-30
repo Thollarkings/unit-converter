@@ -133,14 +133,21 @@ h1 {
   border-bottom: 1px solid rgba(0, 183, 255, 0.37); /* Bottom border */
   width: 100%; /* Ensure the item takes full width of the parent */
   box-sizing: border-box; /* Include padding and border in the element's total width */
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(36, 53, 85));
+  background: white;
+  color: black;
+  border-radius: 2px;
+}
+
+.menu-item:hover:hover {
+  transform: translateY(-5px);
+  background-color: rgb(184, 184, 184);
 }
 
 .category-item:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.192);
 }
 
-.category-item:hover, .menu-item:hover {
+.category-item:hover {
   background: linear-gradient(to bottom, rgba(35, 1, 202, 0.685), rgba(15, 0, 102, 0.253));
 }
 
